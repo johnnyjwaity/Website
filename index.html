@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="./favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta
+        name="description"
+        content="Portfolio Website for Johnny Waity"
+        />
+        <title>Johnny Waity</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./css/default.css">
+        <link rel="stylesheet" href="./css/home.css">
+        <link rel="stylesheet" href="./css/social-block.css">
+    </head>
+    <body>
+        <div class="front-page-container">
+            <div class="filter">
+                <div class="logo-container">
+                    <img src="./images/logo.png" />
+                </div>
+                <div class="social-block">
+                    <a href="https://twitter.com/johnnywaity"><img src="./images/icons/twitter.png"/></a>
+                    <a href="https://www.linkedin.com/in/johnny-w-bbb402161/"><img src="./images/icons/linkedin.png"/></a>
+                    <a href="https://github.com/johnnyjwaity"><img src="./images/icons/github.png"/></a>
+                </div>
+                <div>
+                    <h1 class="title">I'm Johnny;<br />a software engineer</h1>
+                </div>
+                <div class="button-container">
+                    <a href="/resume" class="button-link">View Resume</a>
+                    <a class="button-link">Contact Me</a>
+                </div>
+                <div class="down-section">
+                    <h3>See My Work</h3>
+                    <img src="./images/down.png"/>
+                </div>
+            </div>
+        </div>
+        <section class="projects">
+            <div class="project-grid">
+                <project-box projectID="flux"></project-box>
+                <project-box projectID="map"></project-box>
+                <project-box projectID="pj"></project-box>
+                <project-box projectID="sp"></project-box>
+                <project-box projectID="continuity"></project-box>
+                <project-box projectID="tuxi"></project-box>
+            </div>
+        </section>
+        <footer>Footer</footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
+        <script src="./js/home.js"></script>
+        <script src="./js/projectManifest.js"></script>
+        <script src="./js/Project.js"></script>
+    </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="../favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta
+        name="description"
+        content="Portfolio Website for Johnny Waity"
+        />
+        <title>Resume</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="../css/default.css">
+        <link rel="stylesheet" href="../css/resume.css">
+        <link rel="stylesheet" href="../css/social-block.css">
+
+        <script src="../js/ResumeBlock.js"></script>
+        <script src="../js/ResumeSkill.js"></script>
+    </head>
+    <body>
+        <div class="resume">
+            <div class="header">
+                <div class="head-filter">
+                    <div class="social-block">
+                        <a href="https://twitter.com/johnnywaity"><img src="../images/icons/twitter.png"/></a>
+                        <a href="https://www.linkedin.com/in/johnny-w-bbb402161/"><img src="../images/icons/linkedin.png"/></a>
+                        <a href="https://github.com/johnnyjwaity"><img src="../images/icons/github.png"/></a>
+                    </div>
+                    <a class="back" href="/"><img src="../images/icons/back.png"/></a>
+                    <h1>Resume</h1>
+                    <a href="Resume.pdf" download="Resume.pdf" class="button">Download PDF</a>
+                </div>
+            </div>
+            <div class="resume-container">
+                <div class="resume-section first">
+                    <h2>Education</h2>
+                    <resume-block title="University of Illinois Urbana-Champaign" subtitle="2020-2024 - B.S. Computer Engineering - GPA: 3.93 - Urbana, IL" img="../images/icons/uiuc.jpeg" content="Relevant Coursework: Introduction to Computing, Philosophical Foundations of Computer Science, Introuction to Electronics, Computer Systems & Programming"></resume-block>
+                    <resume-block title="James B. Conant High School" subtitle="2016-2020 - ACT: 35 - GPA: 4.70 - Hoffman Estates, IL" img="../images/icons/chs-logo.png" content="Relevant Coursework: AP Computer Science Principles, AP Computer Science A, Mobile App Development, Computer Science Independent Study"></resume-block>
+                    <h2>Experience</h2>
+                    <resume-block title="IT Partners at Education" subtitle="Full Stack Web Developer - January 2021-Present - Urbana, IL" img="../images/icons/uiuc.jpeg" content="Updated websites for the University of Illinois and the Big 10. Developed styles to fit within the UIUC website system. Used content management systems, web technologies, and .NET to build frontend and backend services."></resume-block>
+                    <resume-block title="Motorola Solutions" subtitle="Internship - June 2019 - Chicago, IL" img="../images/icons/motorola.png" content="Tasked with creating an external and internal temperature sensor for firemen to use on the field. Used Swift to develop an iOS app for a fire chief to monitor temperatures on the field."></resume-block>
+                    <resume-block title="Computer Science Kids" subtitle="Webmaster & Lead Teacher - 2018-2020 - Hoffman Estates, IL" img="../images/icons/chs-logo.png" content="Planned and taught lessons to first through eighth graders about computer science. Designed and built web infrastructure for registration and organization management using Node JS, React JS, MongoDB, and MySQL."></resume-block>
+                    <h2>Projects</h2>
+                    <resume-block title="Conant Map" subtitle="iOS Interactive 3D Map for Students - 2019" img="../images/icons/conant-map.jpeg" content="Developed an iOS app using Swift for new students to help them navigate the school. Used custom path-finding algorithm to generate the fastest routes between classrooms. Available for download on the Apple App Store."></resume-block>
+                    <resume-block title="Flux" subtitle="Social Media Network for Asking and Answering" img="../images/icons/flux.png" content="A social media app for asking and answering questions about current events, reviews, and everyday worries. The client was developed in Swift for iOS. The server is built using Node JS and MongoDB."></resume-block>
+                    <resume-block title="Spread Positivity" subtitle="Website to share Positive Thoughts" img="../images/icons/positivity.png" content="A website I created druing the Pandemic to promote good thoughts among my classmates and the rest of the world. Developed using React JS for the front end and Node JS and MongoDB for the backend."></resume-block>
+                    <resume-block title="Continuity" subtitle="Scrolling Wallpapers for iOS Devices" img="../images/icons/continuity.png" content="Jailbreak software that allows iPhones to have scrollable wallpaper with the app pages. Available for $0.99 on Tweak Repositories. Built with Objective-C. "></resume-block>
+                    <resume-block title="Time Unlock XI" subtitle="Unlock Your iPhone with the Time" img="../images/icons/unlock.png" content="Software that would set the device password of an iPhone to the current time. Made the device password always be different for security. Developed with Objective-C. Over 10,000 downloads. Available for download through tweak repositories."></resume-block>
+                </div>
+                <div class="resume-section last">
+                    <h2>Skills</h2>
+                    <h3>Developer</h3>
+                    <resume-skill img="../images/icons/skills/js.png" skill="JavaScript"></resume-skill>
+                    <resume-skill img="../images/icons/skills/swift.png" skill="Swift"></resume-skill>
+                    <resume-skill img="../images/icons/skills/html.png" skill="HTML"></resume-skill>
+                    <resume-skill img="../images/icons/skills/css.png" skill="CSS"></resume-skill>
+                    <resume-skill img="../images/icons/skills/c++.png" skill="C/C++"></resume-skill>
+                    <resume-skill img="../images/icons/skills/objc.png" skill="Objective-C"></resume-skill>
+                    <resume-skill img="../images/icons/skills/java.png" skill="Java"></resume-skill>
+                    <resume-skill img="../images/icons/skills/node.png" skill="Node JS"></resume-skill>
+                    <resume-skill img="../images/icons/skills/react.png" skill="React JS"></resume-skill>
+                    <resume-skill img="../images/icons/skills/python.png" skill="Python"></resume-skill>
+                    <resume-skill img="../images/icons/skills/csharp.png" skill="C#"></resume-skill>
+                    <resume-skill img="../images/icons/skills/php.png" skill="PHP"></resume-skill>
+                    <resume-skill img="../images/icons/skills/r.png" skill="R"></resume-skill>
+                    <resume-skill img="../images/icons/skills/gl.png" skill="Open GL"></resume-skill>
+                    <resume-skill img="../images/icons/skills/unity.png" skill="Unity"></resume-skill>
+                    <resume-skill img="../images/icons/skills/ti.png" skill="TI Basic"></resume-skill>
+                    <resume-skill img="../images/icons/skills/mongo.png" skill="Mongo DB"></resume-skill>
+                    <resume-skill img="../images/icons/skills/sql.png" skill="MySQL"></resume-skill>
+                    <h3>Programs</h3>
+                    <resume-skill img="../images/icons/skills/sketch.png" skill="Sketch"></resume-skill>
+                    <resume-skill img="../images/icons/skills/photoshop.png" skill=" Adobe Photoshop"></resume-skill>
+                    <resume-skill img="../images/icons/skills/premiere.png" skill="Adobe Premiere"></resume-skill>
+                    <resume-skill img="../images/icons/skills/aftereffects.png" skill="Adobe After Effects"></resume-skill>
+                    <resume-skill img="../images/icons/skills/word.png" skill="Microsoft Word"></resume-skill>
+                    <resume-skill img="../images/icons/skills/powerpoint.png" skill=" Microsoft Powerpoint"></resume-skill>
+                    <resume-skill img="../images/icons/skills/excel.png" skill="Microsoft Excel"></resume-skill>
+                    <h3>Interpersonal</h3>
+                    <resume-skill img="../images/icons/skills/lead.png" skill="Leadership"></resume-skill>
+                    <resume-skill img="../images/icons/skills/speak.png" skill="Public Speaking"></resume-skill>
+                    <resume-skill img="../images/icons/skills/problem.png" skill="Problem Solving"></resume-skill>
+                    <resume-skill img="../images/icons/skills/spanish.png" skill="Spanish"></resume-skill>
+                    <h2>Awards</h2>
+                    <resume-block title="Congressional App Challenge" subtitle="1st Place in 8th Congressional District" img="../images/icons/congress.jpeg" content="Submitted Conant Map (See more under Projects) to the Congressional App Challenge. Won first place for the app in my district and presented the app in front of Congressman Raja Krishnamoorthi. Planned to travel to Washington D.C. to present in front of the rest of Congress, but the event was canceled becuase of COVID-19."></resume-block>
+                    <resume-block title="BPA C++ Programming Competition" subtitle="1st Place in State. 6th Place in Nationals" img="../images/icons/bpa.jpeg"></resume-block>
+                    <resume-block title="BPA Programming Concepts Competition" subtitle="1st Place in State. 8th Place in Nationals" img="../images/icons/bpa.jpeg"></resume-block>
+                    <resume-block title="BPA Administrative Concepts Competition" subtitle="7th Place in Nationals" img="../images/icons/bpa.jpeg"></resume-block>
+                    <resume-block title="Eagle Scout" subtitle="Awarded in 2018" img="../images/icons/eagle.png" content="In order to complete the rank of Eagle Scout, I had to plan and lead a community service project. My project was to help ALmost Home Foundation, an animal shelter, raise money, food, and renovate one of their storage facilities. "></resume-block>
+                    <h2>Certifications</h2>
+                    <resume-block title="MTA HTML 5 Development Fundamentals" subtitle="May 2019" img="../images/icons/microsoft.png"></resume-block>
+                    <resume-block title="MTA Software Development Fundamentals" subtitle="May 2019" img="../images/icons/microsoft.png"></resume-block>
+                    <resume-block title="IC3 Computing Fundamentals" subtitle="May 2019" img="../images/icons/ic3.jpeg"></resume-block>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
