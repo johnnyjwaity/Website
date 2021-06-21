@@ -79,15 +79,282 @@
 
 
 .projects {
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: white;
+    /* background-image: linear-gradient(to bottom, rgba(48, 207, 208, 0.9) 0%, #262b2f 100%); */
+    position: relative;
+    overflow: hidden;
+}
+
+.project-container{
+    overflow-x: scroll;
+    overflow-y: visible;
+    white-space: nowrap;
+    height: 650px;
+    padding-top: 20px;
+    /* -ms-overflow-style: none; 
+    scrollbar-width: none;  */
+
+    cursor: grab;
+
+    scroll-snap-type: x mandatory;
+}
+/* .project-container::-webkit-scrollbar {
+    display: none;
+} */
+.circle{
+    position: absolute;
+    min-width: 300px;
+    min-height: 300px;
+    /* z-index: -1; */
+}
+.circle.one{
+    width: 30vw;
+    height: 30vw;
+    border-radius: 15vw;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    left: -10vw;
+    top: -10vw;
+}
+.circle.two{
+    width: 40vw;
+    height: 40vw;
+    border-radius: 20vw;
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    right: -10vw;
+    bottom: -10vw;
+}
+.circle.three{
+    width: 25vw;
+    height: 25vw;
+    border-radius: 12.5vw;
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    left: 50%;
+    top: -5vw;
+}
+.circle.four{
+    width: 45vw;
+    height: 45vw;
+    border-radius: 22.5vw;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    left: 10vw;
+    bottom: -20vw;
+}
+
+.project {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    height: 500px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255,255, 0.2);
+    overflow: hidden;
+    border-top:  2px solid rgba(255, 255, 255, 0.5);
+    border-left:  2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 2;
+    margin: 20px;
+    scroll-snap-align: start;
+}
+
+.project h2 {
+    font-size: 40px;
+    margin: 0;
+    color: rgb(75, 75, 75);
+}
+
+.project p {
+    margin: 20px;
+    color: rgb(75, 75, 75);
+    white-space: normal;
+}
+
+.project .detail {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: stretch;
+    align-items: flex-start;
+}
+
+.project .detail .line {
+    flex-grow: 1;
+    height: 50%;
+    border-bottom: 1px gray solid;
+}
+
+.project .detail .outline {
+    width: 100px;
+    height: 100px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    align-self: center;
+    border-radius: 50px;
+    border: 1px gray solid;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.project .detail .outline img {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+}
+
+.project .detail2 {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.project .detail2 .divider {
+    width: 1px;
+    height: 100%;
+    background-color: gray;
+}
+
+.project .skill-container {
+    width: 100%;
+    height: 25px;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project .skill-container .skill {
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px gray solid;
+    height: 20px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+
+.project .skill-container .skill div {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.swift{
+    background-color: orange;
+}
+.node {
+    background-color: springgreen;
+}
+.mongo{
+    background-color: teal;
+}
+.sql{
+    background-color: red;
+}
+.js{
+    background-color: yellow;
+}
+.react{
+    background-color: cyan;
+}
+.unity{
+    background-color: black;
+}
+.csharp{
+    background-color: purple;
+}
+.objc{
+    background-color: coral;
+}
+.project .skill-container .skill p {
+    margin: 0 10px 0 5px;
+    padding: 0;
+    font-weight: bold;
+    color: gray;
+    font-size: 12px;
+}
+
+.link-container {
+    width: 49%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-button {
+    /* background-color: rgb(240, 240, 240); */
+    border: 1px solid gray;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    transition: all 0.2s ease-in-out;
+}
+.circle-button:hover{
+    transform: scale(1.1);
+}
+.circle-button img{
+    width: 30px;
+    height: 30px;
+    filter: invert(30%);
+}
+
+.stat-container {
+    width: 49%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.stat-container p {
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
+    color: rgb(75, 75, 75);
+}
+.stat-container label {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+    color: rgb(75, 75, 75);
+}
+
+.release-block{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.release-block p {
+    color: gray;
+    font-style: italic;
+}
+
+
+.project * {
+    z-index: 3;
+}
+
+
+
 .project-grid{
     max-width: 900px;
-    min-width: 300px;
+    min-width: 30px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
