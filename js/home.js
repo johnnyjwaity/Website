@@ -20,21 +20,23 @@ VanillaTilt.init(document.querySelectorAll(".project"), {
     "max-glare": 0.8
 })
 
-// let pos = { top: 0, left: 0, x: 0, y: 0 };
-// let ele = document.querySelector(".project-container")
-// const mouseDownHandler = function(e) {
-//     pos = {
-//         // The current scroll 
-//         left: ele.scrollLeft,
-//         top: ele.scrollTop,
-//         // Get the current mouse position
-//         x: e.clientX,
-//         y: e.clientY,
-//     };
+let pos = { top: 0, left: 0, x: 0, y: 0 };
+let ele = document.querySelector(".project-container")
 
-//     document.addEventListener('mousemove', mouseMoveHandler);
+const mouseDownHandler = function(e) {
+    console.log("hi")
+    pos = {
+        // The current scroll 
+        left: ele.scrollLeft,
+        top: ele.scrollTop,
+        // Get the current mouse position
+        x: e.clientX,
+        y: e.clientY,
+    };
+
+    // document.addEventListener('mousemove', mouseMoveHandler);
 //     document.addEventListener('mouseup', mouseUpHandler);
-// }
+}
 // const mouseMoveHandler = function(e) {
 //     // How far the mouse has been moved
 //     const dx = e.clientX - pos.x;
@@ -50,4 +52,4 @@ VanillaTilt.init(document.querySelectorAll(".project"), {
 //     ele.style.removeProperty('user-select');
 // };
 
-// ele.addEventListener("mousedown", mouseDownHandler);
+ele.addEventListener("mousedown", mouseDownHandler);

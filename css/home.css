@@ -105,6 +105,16 @@
 /* .project-container::-webkit-scrollbar {
     display: none;
 } */
+
+.project-back{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 550px;
+    scroll-snap-align: start;
+}
+
 .circle{
     position: absolute;
     min-width: 300px;
@@ -145,7 +155,7 @@
 }
 
 .project {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -160,7 +170,6 @@
     backdrop-filter: blur(10px);
     z-index: 2;
     margin: 20px;
-    scroll-snap-align: start;
 }
 
 .project h2 {
