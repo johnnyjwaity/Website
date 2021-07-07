@@ -1,0 +1,131 @@
+.skills-section{
+    height: 100vh;
+    background-color: rebeccapurple;
+    position: relative;
+}
+
+.blink{
+    animation: blinker 1.2s steps(5, start) infinite;
+    /* font-size: 200px; */
+}
+@keyframes blinker {
+    to{
+        visibility: hidden;
+    }
+}
+
+.skills-section h1 {
+    font-size: 150px;
+    color: yellow;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 40%;
+    margin: 0;
+}
+
+.skills-section > div {
+    width: 100%;
+    height: calc(95% - 100px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.mobile-container{
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+}
+.web-container {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.progress-bar {
+    height: 50px;
+    background-color: purple;
+    width: 0%;
+    display: none;
+}
+
+#mobile-canvas {
+    opacity: 0;
+    width: 40%;
+    min-width: 300px;
+}
+.skill-project{
+    width: 300px;
+    /* height: 500px; */
+    border: 1px gray solid;
+    margin: 20px;
+    border-radius: 20px;
+    opacity: 0;
+}
+
+.skill-project .detail {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100px;
+    margin-top: 20px;
+}
+.skill-project .detail .outline {
+    width: 33%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border: 1px gray solid;
+    height: 100px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill-project .detail .outline img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.skill-project .detail .outline img.small {
+    width: 80%;
+    height: 80%;
+}
+.skill-project .detail .line {
+    width: 33%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    border-bottom: 1px gray solid;
+    height: 50%;
+}
+
+.skill-project h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    margin: 10px 0;
+}
+.skill-project p {
+    margin: 8px;
+}
+
+.skill-project .link-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid gray;
+}
+.skill-project .appstore {
+    margin-top: 5px;
+}
+
+.prog2 {
+    display: none;
+}
+
+#web-canvas{
+    max-width: 100%;
+    height: 80%;
+}

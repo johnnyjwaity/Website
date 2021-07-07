@@ -15,6 +15,7 @@
 
         <link rel="stylesheet" href="./css/default.css">
         <link rel="stylesheet" href="./css/home.css">
+        <link rel="stylesheet" href="./css/skills.css">
         <link rel="stylesheet" href="./css/social-block.css">
     </head>
     <body>
@@ -41,7 +42,53 @@
                 </div>
             </div>
         </div>
-        <section class="projects">
+        <section style="width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center;">
+            
+        </section>
+        <section class="skills-section">
+            <h1 class="skill-title"><span class="text">Skills</span><span class="blink">|</span></h1>
+            <div class="mobile-container">
+                <div class="progress-bar"></div>
+                
+                <div class="skill-project flux">
+                    <div class="detail">
+                        <div class="line"></div>
+                        <div class="outline">
+                            <img src="images/icons/flux.png"/>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <h2>Flux</h2>
+                    <p>A social media app for asking and answering questions about current events, reviews, and everyday worries.</p>
+                    <div class="link-container">
+                        <a href="https://tryflux.app" class="circle-button"><img src="images/icons/web.png"/></a>
+                        <a href="https://github.com/johnnyjwaity/FluxApp" class="circle-button"><img src="images/icons/source.png"/></a>
+                    </div>
+                </div>
+                <canvas width="1000px" height="750px" id="mobile-canvas"></canvas>
+                <div class="skill-project map">
+                    <div class="detail">
+                        <div class="line"></div>
+                        <div class="outline">
+                            <img class="small" src="images/icons/conant-map.jpeg"/>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <h2>Conant Map</h2>
+                    <p>An app to help students navigate Conant High School. Conant Map helps students find the quickest route to their classes and helps find their teachers.</p>
+                    <div class="link-container">
+                        <a href="https://conantmap.com" class="circle-button"><img src="images/icons/web.png"/></a>
+                        <a class="appstore" href="https://apps.apple.com/us/app/conant-map/id1464615962?itsct=apps_box_badge&amp;itscg=30200"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1566518400&h=56ebef3f031a582d3e3243a0fc667296" alt="Download on the App Store" style="border-radius: 13px; width: 150px; height: 50px;"></a>
+                        <a href="https://github.com/johnnyjwaity/ConantMap" class="circle-button"><img src="images/icons/source.png"/></a>
+                    </div>
+                </div>
+            </div>
+            <div class="web-container">
+                <div class="prog2"></div>
+                <canvas width="1000px" height="750px" id="web-canvas"></canvas>
+            </div>
+        </section>
+        <!-- <section class="projects">
             <div class="circle one"></div>
             <div class="circle two"></div>
             <div class="circle three"></div>
@@ -271,12 +318,16 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <footer>Footer</footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/TextPlugin.min.js"></script>
         <script src="./js/libraries/vanilla-tilt.min.js"></script>
         <script src="./js/home.js"></script>
+        <script src="./js/canvas-anim.js"></script>
+        <script src="./js/web-anim.js"></script>
+        <script src="./js/skills.js"></script>
         <script src="./js/projectManifest.js"></script>
         <script src="./js/Project.js"></script>
     </body>
