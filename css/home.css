@@ -76,6 +76,17 @@
     height: 20px;
 }
 
+svg * {
+    animation: display 3s ease-out forwards;
+    animation-delay: 2s;
+    stroke: #3BB2E2 !important;
+
+}
+@keyframes display {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
 
 
 .projects {

@@ -15,13 +15,14 @@
 }
 
 .skills-section h1 {
-    font-size: 150px;
+    /* font-size: 150px; */
     color: yellow;
     position: absolute;
     width: 100%;
     text-align: center;
     top: 40%;
     margin: 0;
+    z-index: 100;
 }
 
 .skills-section > div {
@@ -42,6 +43,9 @@
     justify-content: space-around;
     align-items: center;
 }
+.game-container {
+    display: none;
+}
 
 .progress-bar {
     height: 50px;
@@ -53,72 +57,166 @@
 #mobile-canvas {
     opacity: 0;
     width: 40%;
-    min-width: 300px;
+    width: 100%;
+    max-width: 1000px;
 }
+
 .skill-project{
     width: 300px;
     /* height: 500px; */
-    border: 1px gray solid;
-    margin: 20px;
+    /* border: 1px gray solid; */
+    /* margin: 20px; */
     border-radius: 20px;
     opacity: 0;
+    position: absolute;
+    bottom: 40%;
+    right: 5%;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+    transform: scale(1.3);
+    z-index: 75;
+    background-color: white;
+}
+@media only screen and (max-width: 1250px) {
+    .skill-project {
+      transform: scale(1);
+      bottom: 5%;
+    }
+}
+.skill-project>img {
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+    margin: 10px;
 }
 
-.skill-project .detail {
+.skill-project .name-container{
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    height: 100px;
-    margin-top: 20px;
-}
-.skill-project .detail .outline {
-    width: 33%;
-    flex-grow: 0;
-    flex-shrink: 0;
-    border: 1px gray solid;
-    height: 100px;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-}
-.skill-project .detail .outline img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-}
-.skill-project .detail .outline img.small {
-    width: 80%;
-    height: 80%;
-}
-.skill-project .detail .line {
-    width: 33%;
-    flex-grow: 1;
-    flex-shrink: 1;
-    border-bottom: 1px gray solid;
-    height: 50%;
+    padding-right: 10px;
 }
 
-.skill-project h2 {
-    width: 100%;
-    text-align: center;
+.icon-button{
+    background-color: rgb(0, 112,255);
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    height: 25px;
+    border-radius: 12.5px;
+    padding-right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.icon-button img {
+    width: 18px;
+    height: 18px;
+    filter: invert(100%);
+    margin: 0 5px;
+}
+.icon-button label {
+    cursor: pointer;
+}
+
+.skill-project h2{
     font-size: 35px;
-    margin: 10px 0;
-}
-.skill-project p {
-    margin: 8px;
+    margin: 0 0 0 12px;
+    white-space: nowrap;
 }
 
-.skill-project .link-container {
-    width: 100%;
+.skill-project .line {
+    width: auto;
+    height: 5px;
+    margin: 0 10px;
+}
+.skill-project.flux .line {
+    background: rgb(63,155,212);
+    background: linear-gradient(90deg, rgba(63,155,212,1) 0%, rgba(55,246,159,1) 100%);
+}
+
+.skill-project .large-circle-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 112,255);
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+.large-circle-button.right{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.skill-project .large-circle-button img {
+    filter: invert(100%);
+    width: 30px;
+    height: 30px;
+}
+
+.skill-project p {
+    margin: 10px 15px;
+    font-style: italic;
+    font-weight: bold;
+    color: gray;
+}
+
+.skill-project .bottom-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid gray;
+    width: 100%;
 }
-.skill-project .appstore {
-    margin-top: 5px;
+
+@media only screen and (min-width: 1075px) {
+    .mobile{
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 1075px) {
+    .large {
+        display: none !important;
+    }
+    .skill-project {
+      width: 95%;
+      max-width: 650px;
+      height: 100px;
+      right: 50%;
+      transform: translateX(50%);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 5px;
+      bottom: 2%;
+      transform: scale(50%);
+      transform-origin: center;
+    }
+
+    .skill-project>img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .skill-project .name-container {
+        display: inline-block;
+    }
+
+    .skill-project .name-container h3 {
+        margin: 0 10px;
+        color: gray;
+        font-style: italic;
+        white-space: nowrap;
+    }
+
+    .skill-project .large-circle-button {
+        margin: 5px;
+    }
 }
 
 .prog2 {
@@ -126,6 +224,17 @@
 }
 
 #web-canvas{
-    max-width: 100%;
-    height: 80%;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.orange-background {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background: rgb(255,143,0);
+    background: linear-gradient(135deg, rgba(255,143,0,1) 50%, rgba(255,255,255,1) 50%);
+    z-index: -1;
 }

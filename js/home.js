@@ -19,3 +19,14 @@ VanillaTilt.init(document.querySelectorAll(".project"), {
     glare: true,
     "max-glare": 0.8
 })
+
+let animateableObjects = []
+animateableObjects.push(...document.querySelectorAll(".st0"))
+animateableObjects.push(...document.querySelectorAll(".st1"))
+animateableObjects.push(...document.querySelectorAll(".st2"))
+animateableObjects.push(...document.querySelectorAll(".st3"))
+
+animateableObjects.forEach(o => {
+    o.style.strokeDasharray = o.getTotalLength();
+    o.style.strokeDashoffset = o.getTotalLength();
+})

@@ -1,16 +1,29 @@
+let largeSize = "150px"
+let smallSize = "75px"
+
+if(screen.width <= 920) {
+    largeSize = "15vw"
+    smallSize = "15vw"
+}
+console.log(largeSize)
+
 let timeline = gsap.timeline({
     scrollTrigger: {
         trigger: ".skills-section",
         pin: true,
         start: "top top",
-        end: "+=40000",
+        end: "+=30000",
         scrub: 1,
     }
+})
+timeline.to(".skill-title", {
+    fontSize: largeSize,
+    duration: 0
 })
 textSwitch("Skills", "Mobile Apps")
 timeline.to(".skill-title", {
     top: "5%",
-    fontSize: "75px",
+    fontSize: smallSize,
     color: "black",
     duration: 7
 })
@@ -51,14 +64,14 @@ timeline.to(".mobile-container", {
 })
 timeline.to(".skill-title", {
     top: "40%",
-    fontSize: "150px",
+    fontSize: largeSize,
     duration: 7,
     color: "#4169E1"
 })
 textSwitch("Mobile Apps", "Websites")
 timeline.to(".skill-title", {
     top: "5%",
-    fontSize: "75px",
+    fontSize: smallSize,
     duration: 7
 })
 timeline.to(".web-container", {
@@ -66,10 +79,34 @@ timeline.to(".web-container", {
     duration: 0
 })
 timeline.to(".prog2", {
-    width: "100%",
-    duration: 90
+    width: "46%",
+    duration: 45
 })
-
+timeline.to(".skill-title", {
+    color: "white",
+    delay: 2,
+    duration: 4
+}, "<")
+timeline.to(".skill-title", {
+    color: "#4169E1",
+    delay: 25,
+    duration: 4
+}, "<")
+timeline.to(".skill-title", {
+    top: "40%",
+    fontSize: largeSize,
+    duration: 7
+})
+timeline.to(".web-container", {
+    display: "none",
+    duration: 0
+})
+textSwitch("Websites", "Games")
+timeline.to(".skill-title", {
+    top: "5%",
+    fontSize: smallSize,
+    duration: 7
+})
 
 timeline.to({}, {duration: 0})
 
