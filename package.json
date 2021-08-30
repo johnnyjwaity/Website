@@ -1,0 +1,20 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "My personal portfolio website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass scss/:css/ && echo \"Done\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnnyjwaity/Website.git"
+  },
+  "author": "Johnny Waity",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnnyjwaity/Website/issues"
+  },
+  "homepage": "https://github.com/johnnyjwaity/Website#readme"
+}

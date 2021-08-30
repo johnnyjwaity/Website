@@ -1,17 +1,26 @@
 .social-block {
-    position: absolute;
-    right: 10px;
-    top: 10px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
+
 .social-block a {
-    margin: 10px;
+  margin: 10px;
 }
+
 .social-block img {
-    filter: invert(100%);
-    width: 40px;
-    height: 40px;
-    transition: all 0.2s ease-in-out;
+  filter: invert(100%);
+  width: 40px;
+  height: 40px;
+  transition: all 0.2s ease-in-out;
 }
+
+.social-block.color img {
+  filter: invert(40%) sepia(86%) saturate(4931%) hue-rotate(212deg) brightness(91%) contrast(90%);
+}
+
 .social-block img:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
+
+/*# sourceMappingURL=social-block.css.map */
