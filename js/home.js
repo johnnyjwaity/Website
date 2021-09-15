@@ -203,7 +203,13 @@ function sendMessage(){
     let name = document.querySelector("#name-input").value;
     let email = document.querySelector("#email-input").value;
     let message = document.querySelector("#message-input").value;
-    
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+        }
+    };
+    xhttp.open("POST", "https://gyl096eb46.execute-api.us-east-2.amazonaws.com/default/contactMe", true);
+    xhttp.send(JSON.stringify({name: name, email: email, message: message}));
 
     document.querySelector(".confirmation").style.display = "flex";
 }
