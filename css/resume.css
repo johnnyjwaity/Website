@@ -9,7 +9,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   box-sizing: border-box;
-  padding: 40px;
+  padding: 20px 40px 40px 40px;
 }
 
 .resume-section.first {
@@ -34,31 +34,31 @@
   font-size: 36px;
   padding-bottom: 10px;
   width: 75%;
-  border-bottom: solid 4px #324889;
+  border-bottom: solid 4px #2565DE;
   /* border-bottom: solid 4px rgb(110, 147, 255); */
 }
 
 .header {
   width: 100%;
-  height: 300px;
-  background-image: url("../images/background.png");
+  height: 250px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   box-sizing: border-box;
   overflow: auto;
+  background-color: #2565DE;
 }
 
 .header .head-filter {
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to top, rgba(48, 207, 208, 0.9) 0%, rgba(51, 8, 103, 0.9) 100%);
   /* background-color: rgba(50, 100, 255, 0.6); */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   padding: 0 40px;
+  padding-bottom: 20px;
   position: relative;
 }
 
@@ -69,8 +69,28 @@
   }
 }
 .header h1 {
+  font-size: 80px;
   color: white;
-  font-size: 60px;
+  margin: 0 0 20px 0;
+  display: inline-block;
+  font-family: mochi, "Alfa Slab One", cursive;
+  letter-spacing: 5px;
+  white-space: nowrap;
+  z-index: 100;
+}
+
+.header svg {
+  position: absolute;
+  min-width: 100%;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+svg * {
+  stroke: white !important;
 }
 
 .header .button {
@@ -83,6 +103,8 @@
   font-weight: bold;
   cursor: pointer;
   text-decoration: none;
+  z-index: 99;
+  margin-bottom: 20px;
 }
 
 .header .back {
