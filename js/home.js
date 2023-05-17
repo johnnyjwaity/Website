@@ -63,15 +63,15 @@ let mobileAppInfo = {
 
 let fluxLinks = `
 <div class="link-box">
-    <a class="link-button flux" href="https://www.tryflux.app"><img src="images/icons/web.png"/>Visit Site</a>
+    <!-- <a class="link-button flux" href="https://www.tryflux.app"><img src="images/icons/web.png"/>Visit Site</a> -->
     <a class="link-button flux" href="https://github.com/johnnyjwaity/FluxApp"><img src="images/icons/source.png"/>View Source</a>
 </div>
 `
 let mapLinks = `
 <div class="link-box">
-    <a class="link-button conantMap" href="https://www.conantmap.com"><img src="images/icons/web.png"/>Visit Site</a>
+    <!-- <a class="link-button conantMap" href="https://www.conantmap.com"><img src="images/icons/web.png"/>Visit Site</a> -->
     <a class="link-button conantMap" href="https://github.com/johnnyjwaity/ConantMap"><img src="images/icons/source.png"/>View Source</a>
-    <a class="conantMap" href="https://apps.apple.com/us/app/conant-map/id1464615962?itsct=apps_box_badge&amp;itscg=30200"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1566518400&h=56ebef3f031a582d3e3243a0fc667296" alt="Download on the App Store" style="border-radius: 13px; width: 150px; height: 50px;"></a>
+    <!-- <a class="conantMap" href="https://apps.apple.com/us/app/conant-map/id1464615962?itsct=apps_box_badge&amp;itscg=30200"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1566518400&h=56ebef3f031a582d3e3243a0fc667296" alt="Download on the App Store" style="border-radius: 13px; width: 150px; height: 50px;"></a> -->
 </div>
 `
 mobileAppInfo.flux.description += fluxLinks;
@@ -106,7 +106,7 @@ let websiteInfo = {
 }
 let positivityLinks = `
 <div class="link-box">
-    <a class="link-button positivity" href="https://spreadpositivity.net/"><img src="images/icons/web.png"/>Visit Site</a>
+    <a class="link-button positivity" href="https://positivity.johnnywaity.com/"><img src="images/icons/web.png"/>Visit Site</a>
     <a class="link-button positivity" href="https://github.com/johnnyjwaity/positivity"><img src="images/icons/source.png"/>View Source</a>
 </div>
 `

@@ -33,7 +33,6 @@ $color3: #3C99FC;
     height: 100vh;
     position: relative;
     overflow: hidden;
-
     svg {
         position: absolute;
         // height: 50%;
@@ -51,6 +50,7 @@ svg * {
     stroke: $color3 !important;
     transition: stroke-dashoffset 1s ease-out;
     visibility: hidden;
+    
 }
 @supports (-webkit-touch-callout: none) {
     .front-page-container svg {
@@ -114,7 +114,7 @@ svg * {
             /* sin(20deg) = 0.34202014332 */
             .skew-accent {
                 background-color: $color1;
-                height: 700px;
+                height: 550px;
                 width: 100%;
                 transform: skewX(-20deg) translateX(calc(-0.55 * 0.34202014332 * 75vh));
             }
@@ -213,6 +213,12 @@ svg * {
             }
         }
     }
+}
+
+#skill-divider {
+    height: 1px;
+    border: none;
+    background-color: #F2F2F2;
 }
 
 .skill {

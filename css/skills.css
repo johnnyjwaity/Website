@@ -102,7 +102,7 @@
 }
 
 .icon-button {
-  background-color: #0070ff;
+  background-color: rgb(0, 112, 255);
   text-decoration: none;
   color: white;
   display: flex;
@@ -140,15 +140,15 @@
 }
 
 .skill-project.flux .line {
-  background: #3f9bd4;
-  background: linear-gradient(90deg, #3f9bd4 0%, #37f69f 100%);
+  background: rgb(63, 155, 212);
+  background: linear-gradient(90deg, rgb(63, 155, 212) 0%, rgb(55, 246, 159) 100%);
 }
 
 .skill-project .large-circle-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #0070ff;
+  background-color: rgb(0, 112, 255);
   width: 40px;
   height: 40px;
   border-radius: 20px;
@@ -190,7 +190,6 @@
   .large {
     display: none !important;
   }
-
   .skill-project {
     width: 95%;
     max-width: 650px;
@@ -205,23 +204,19 @@
     transform: scale(50%);
     transform-origin: center;
   }
-
   .skill-project > img {
     width: 80px;
     height: 80px;
   }
-
   .skill-project .name-container {
     display: inline-block;
   }
-
   .skill-project .name-container h3 {
     margin: 0 10px;
     color: gray;
     font-style: italic;
     white-space: nowrap;
   }
-
   .skill-project .large-circle-button {
     margin: 5px;
   }
@@ -241,8 +236,8 @@
   height: 100vh;
   left: 0;
   top: 0;
-  background: #ff8f00;
-  background: linear-gradient(135deg, #ff8f00 50%, white 50%);
+  background: rgb(255, 143, 0);
+  background: linear-gradient(135deg, rgb(255, 143, 0) 50%, rgb(255, 255, 255) 50%);
   z-index: -1;
 }
 

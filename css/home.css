@@ -105,9 +105,9 @@ svg * {
 }
 .about .top-section .left .skew-accent {
   background-color: #2565DE;
-  height: 700px;
+  height: 550px;
   width: 100%;
-  transform: skewX(-20deg) translateX(calc(-0.55 * 0.34202014332 * 75vh));
+  transform: skewX(-20deg) translateX(-14.108330912vh);
 }
 .about .top-section .left img {
   height: auto;
@@ -192,6 +192,12 @@ svg * {
     margin-top: 30px;
   }
 }
+#skill-divider {
+  height: 1px;
+  border: none;
+  background-color: #F2F2F2;
+}
+
 .skill {
   overflow: hidden;
   padding: 20px 20px 20px 20px;
@@ -728,12 +734,12 @@ footer {
 .project h2 {
   font-size: 40px;
   margin: 0;
-  color: #4b4b4b;
+  color: rgb(75, 75, 75);
 }
 
 .project p {
   margin: 20px;
-  color: #4b4b4b;
+  color: rgb(75, 75, 75);
   white-space: normal;
 }
 
@@ -897,14 +903,14 @@ footer {
   font-weight: bold;
   font-size: 40px;
   margin: 0;
-  color: #4b4b4b;
+  color: rgb(75, 75, 75);
 }
 
 .stat-container label {
   font-weight: bold;
   font-size: 20px;
   margin: 0;
-  color: #4b4b4b;
+  color: rgb(75, 75, 75);
 }
 
 .release-block {

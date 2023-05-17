@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/johnnyjwaity/Website/issues"
   },
-  "homepage": "https://github.com/johnnyjwaity/Website#readme"
+  "homepage": "https://github.com/johnnyjwaity/Website#readme",
+  "dependencies": {
+    "sass": "^1.54.4"
+  }
 }
